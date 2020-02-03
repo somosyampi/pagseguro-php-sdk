@@ -71,7 +71,7 @@ trait Shipping
     {
         $data = [];
         $data[$properties::SHIPPING_COST] = \PagSeguro\Helpers\Currency::toDecimal(
-            $request->getShipping()->getCost()->getCost()
+            $request->getShipping()->getCost()
         );
         return $data;
     }
