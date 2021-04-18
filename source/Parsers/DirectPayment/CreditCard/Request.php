@@ -112,7 +112,6 @@ class Request extends Error implements Parser
             ->setNetAmount(current($xml->netAmount))
             ->setPaymentMethod($xml->paymentMethod)
             ->setReference(current($xml->reference))
-            ->setSender($xml->sender)
             ->setShipping($xml->shipping)
             ->setStatus(current($xml->status))
             ->setCreditorFees($xml->creditorFees)
